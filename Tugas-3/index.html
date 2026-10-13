@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arya Nasrullah | Galaxy Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio Arya Nasrullah dengan tema galaksi, interaksi ringan, dan layout responsif."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="stars"></canvas>
+    <div class="cursor-glow" id="glow"></div>
+
+    <nav>
+      <a class="logo" href="#home">ARYA<span>.DEV</span></a>
+      <div class="navlinks">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Skill</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <button id="themeBtn" aria-label="Ganti tema">
+        ☼ <span id="themeLabel">Mode terang</span>
+      </button>
+    </nav>
+
+    <main>
+      <header class="hero" id="home">
+        <div>
+          <div class="eyebrow">
+            <span class="dot"></span>
+            JUNIOR WEB DEVELOPER · SMK 1 PASURUAN
+          </div>
+
+          <h1>
+            Halo, aku<br />
+            <span class="gradient">Arya Nasrullah.</span>
+          </h1>
+
+          <p>
+            Aku siswa kelas X RPL yang sedang menjelajahi dunia web development.
+            Suka bereksperimen, belajar hal baru, dan mengubah ide sederhana
+            menjadi pengalaman digital yang menarik.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">
+              Jelajahi proyek <span>↗</span>
+            </a>
+            <a class="btn" href="#about">Kenalan dulu ↓</a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="stat">
+              <strong>01<span class="gradient">.</span></strong>
+              <span>Curious mind</span>
+            </div>
+            <div class="stat">
+              <strong>24/7</strong>
+              <span>Keep learning</span>
+            </div>
+            <div class="stat">
+              <strong>∞</strong>
+              <span>Ideas to build</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-stage" aria-label="Ilustrasi planet dengan orbit">
+          <div class="orbit"></div>
+          <div class="orbit two"></div>
+          <div class="planet"></div>
+          <div class="floating-tag tag1">{" code_mode": true }</div>
+          <div class="floating-tag tag2">✦ Build something cool</div>
+          <div class="floating-tag tag3">HTML · CSS · JS</div>
+        </div>
+      </header>
+
+      <section id="about" class="reveal">
+        <div class="section-head">
+          <div>
+            <div class="kicker">01 / About me</div>
+            <h2>Di balik layar</h2>
+          </div>
+          <p>
+            Masih dalam perjalanan, tapi selalu punya rasa ingin tahu untuk mencoba
+            sesuatu yang baru.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass about-card">
+            <h3>👨‍💻 Tentang saya</h3>
+            <p>
+              Siswa kelas X Rekayasa Perangkat Lunak yang tertarik dengan desain
+              antarmuka, teknologi, dan cara kerja website. Saat ini fokus
+              memperkuat dasar HTML, CSS, dan JavaScript sambil membuat proyek kecil.
+            </p>
+            <p>
+              Prinsipku: <span class="gradient">belajar, mencoba, memperbaiki, ulangi.</span>
+            </p>
+          </article>
+
+          <article class="glass about-card">
+            <h3>📡 Quick facts</h3>
+            <div class="info-row">
+              <span>Nama</span>
+              <strong>Arya Nasrullah Hamdan</strong>
+            </div>
+            <div class="info-row">
+              <span>Fokus</span>
+              <strong>Front-end Development</strong>
+            </div>
+            <div class="info-row">
+              <span>Sekolah</span>
+              <strong>SMK Negeri 1 Pasuruan</strong>
+            </div>
+            <div class="info-row">
+              <span>Status</span>
+              <strong>
+                <span class="dot" style="display: inline-block"></span> Open to learning
+              </strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="reveal">
+        <div class="section-head">
+          <div>
+            <div class="kicker">02 / Skill set</div>
+            <h2>Tools yang kupelajari</h2>
+          </div>
+          <p>Skill ini adalah proses belajar yang terus berkembang, bukan garis finish.</p>
+        </div>
+
+        <div class="skills">
+          <article class="glass skill">
+            <div class="skill-top">
+              <span class="skill-icon">🌐</span>
+              <span class="chip">01</span>
+            </div>
+            <h3>HTML5 Semantic</h3>
+            <p>Menyusun struktur halaman yang rapi dan mudah dipahami.</p>
+            <div class="bar"><span data-width="78%"></span></div>
+            <small>Learning progress</small>
+          </article>
+
+          <article class="glass skill">
+            <div class="skill-top">
+              <span class="skill-icon">🎨</span>
+              <span class="chip">02</span>
+            </div>
+            <h3>CSS3 &amp; Flexbox</h3>
+            <p>Mengatur layout, warna, animasi, dan tampilan responsif.</p>
+            <div class="bar"><span data-width="65%"></span></div>
+            <small>Learning progress</small>
+          </article>
+
+          <article class="glass skill">
+            <div class="skill-top">
+              <span class="skill-icon">⚡</span>
+              <span class="chip">03</span>
+            </div>
+            <h3>JavaScript</h3>
+            <p>Mulai memahami logika, event, dan interaksi di website.</p>
+            <div class="bar"><span data-width="38%"></span></div>
+            <small>Learning progress</small>
+          </article>
+
+          <article class="glass skill">
+            <div class="skill-top">
+              <span class="skill-icon">📱</span>
+              <span class="chip">04</span>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>Membuat tampilan nyaman dibuka di laptop maupun HP.</p>
+            <div class="bar"><span data-width="60%"></span></div>
+            <small>Learning progress</small>
+          </article>
+
+          <article class="glass skill">
+            <div class="skill-top">
+              <span class="skill-icon">🧰</span>
+              <span class="chip">05</span>
+            </div>
+            <h3>Chrome DevTools</h3>
+            <p>Mengecek tampilan dan mencari masalah sederhana.</p>
+            <div class="bar"><span data-width="45%"></span></div>
+            <small>Learning progress</small>
+          </article>
+
+          <article class="glass skill">
+            <div class="skill-top">
+              <span class="skill-icon">🌱</span>
+              <span class="chip">06</span>
+            </div>
+            <h3>Git &amp; GitHub</h3>
+            <p>Mengenal cara menyimpan versi dan membagikan proyek.</p>
+            <div class="bar"><span data-width="30%"></span></div>
+            <small>Learning progress</small>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="reveal">
+        <div class="section-head">
+          <div>
+            <div class="kicker">03 / Selected work</div>
+            <h2>Eksperimen digital</h2>
+          </div>
+          <p>
+            Beberapa ide yang ingin kukembangkan menjadi proyek nyata. Klik kartu
+            untuk melihat detail singkatnya.
+          </p>
+        </div>
+
+        <div class="projects">
+          <article
+            class="glass project"
+            tabindex="0"
+            data-title="Galaxy Portfolio"
+            data-detail="Portfolio bertema antariksa dengan animasi orbit, mode tema, dan layout responsif. Dibangun menggunakan HTML, CSS, dan JavaScript."
+          >
+            <div class="project-art">🪐</div>
+            <h3>Galaxy Portfolio</h3>
+            <p>Ruang digital untuk memperkenalkan diri dan perjalanan belajarku.</p>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JS</span>
+            </div>
+          </article>
+
+          <article
+            class="glass project"
+            tabindex="0"
+            data-title="Class Hub"
+            data-detail="Konsep dashboard kelas untuk mengumpulkan jadwal, pengumuman, dan daftar tugas agar lebih mudah diakses."
+          >
+            <div class="project-art">🛰️</div>
+            <h3>Class Hub</h3>
+            <p>Ide dashboard sederhana untuk membantu aktivitas kelas.</p>
+            <div class="chips">
+              <span class="chip">UI Design</span>
+              <span class="chip">Responsive</span>
+            </div>
+          </article>
+
+          <article
+            class="glass project"
+            tabindex="0"
+            data-title="Mini Web Lab"
+            data-detail="Kumpulan eksperimen kecil JavaScript seperti tombol interaktif, penghitung sederhana, dan perubahan tema."
+          >
+            <div class="project-art">🧪</div>
+            <h3>Mini Web Lab</h3>
+            <p>Tempat mencoba ide, menguji kode, dan belajar dari error.</p>
+            <div class="chips">
+              <span class="chip">JavaScript</span>
+              <span class="chip">DOM</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="reveal">
+        <div class="glass contact-box">
+          <div>
+            <div class="kicker">04 / Contact</div>
+            <h2>Let's build something ✨</h2>
+            <p>
+              Punya ide, saran, atau ingin ngobrol soal web development? Aku terbuka
+              untuk belajar dan bertukar ide. Yuk, mulai percakapan!
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a
+              class="btn primary"
+              href="https://www.instagram.com/101arya_?stkn=czJteXE2ZW5lNTYy&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+            <a
+              class="btn"
+              href="https://www.tiktok.com/@arynsrlhmdn?is_from_webapp=1&sender_device=pc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TikTok
+            </a>
+            <a
+              class="btn"
+              href="https://wa.me/6281615544428"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </a>
+            <a
+              class="btn primary"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sakkarepwes23@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ✉ Kirim email
+            </a>
+            <a class="btn" href="#home">↑ Kembali ke atas</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Designed &amp; coded with curiosity by <span>Arya Nasrullah</span> ·
+      <span id="year"></span>
+    </footer>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
